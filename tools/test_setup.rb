@@ -1,5 +1,3 @@
-require_relative '../config/environment.rb'
-
 #USERS
 lucy = User.new("Lucy")
 gabriel = User.new("Gabriel")
@@ -43,8 +41,8 @@ RecipeIngredient.new(cake, egg)
 
 #RECIPE_CARDS
 #Lucy's Recipes:
-RecipeCard.new(lucy, cake)
-RecipeCard.new(lucy, pizza)
+RecipeCard.new(lucy, cake, 180613, 5)
+RecipeCard.new(lucy, pizza, 180528, 5)
 
 #Gabriel's Recipes:
 RecipeCard.new(gabriel, risotto)
@@ -63,6 +61,3 @@ Allergen.new(lucy, egg)
 Allergen.new(gabriel, cheese)
 Allergen.new(rishi, beef)
 Allergen.new(rishi, egg)
-
-
-binding.pry
